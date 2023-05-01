@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-size: cover;
+    box-sizing: border-box;
+}
+/*    HEADER    */
+header{
+    color: #fff;
+    background-color: #8A1538;
+    text-align: center;
+}
+header h2,header h3{
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 25px;
+}
+.navBar{
+    background: #00573F;
+    text-align: center;
+    position: absolute;
+    width: 1000px;
+    margin-left: 500px;
+    margin-bottom: 50px;
+    
+}
+.navBar ul{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+.navBar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.dropdown{
+    display: none;
+}
+/*   Navbar Link    */
+a {
+    color: #fff;
+}
+a:hover{
+    padding: 3px;
+    color: #000;
+}
+/*   SubMenuBar  */
+.sub-menu{
+    display: none;
+}
+.navBar ul li:hover{
+    background-color: #FFB81D;
+}
+.navBar ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    background-color: #B61A38;
+    margin-top: 15px;
+    margin-left: -15px;
+
+}
+.navBar ul li:hover .sub-menu ul{
+    display: block;
+    margin: 10px;
+}
+.navBar ul li:hover .sub-menu ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;   
+}
+.navBar ul li:hover .sub-menu ul li:last-child{
+    border-bottom: none;
+}
