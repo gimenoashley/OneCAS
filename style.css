@@ -52,11 +52,17 @@ header h2,header h3{
     padding: 25px;
 }
 .navigation{
+<<<<<<< HEAD
+<<<<<<< HEAD
+    margin: 30px;
+=======
     
+>>>>>>> 8dd8fc509d054d7ec147bf38131c72297efb4928
     font-size: 20px;
     text-align: center;
     line-height:300%;
     list-style: none;
+    left: 0;
 }
 .sub-navigation{
     color: #fff;
@@ -107,12 +113,9 @@ a:hover{
     display: block;
     position: absolute;
     background-color: #B61A38;
-    margin-top: 15px;
-    margin-left: -15px;
 }
 .navBar ul li:hover .sub-menu ul{
     display: block;
-    margin: 10px;
 }
 .navBar ul li:hover .sub-menu ul li{
     width: 150px;
@@ -239,6 +242,25 @@ a:hover{
   to {opacity: 1}
 }
 
+footer hr{
+    height: 20px;
+    position: relative;
+    margin-top: 80%;
+    background-color: #FFB81D;
+    width: 100%;
+    border-color: #FFB81D;
+}
+footer .copyright{
+    background-color: #8A1538;
+    text-align: center;
+    color: white;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+
 /*ACAD_ORG*/
 .acadOrg{
     border: solid;
@@ -276,8 +298,59 @@ a:hover{
     left:20%;
 }
 .next{
-  right: 20%;
+    right: 20%;
 }
+.orgName{
+    background-color: black;
+    border-radius: 50px;
+    color: white;
+    position: relative;
+    height: 200px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 15%;
+}
+.acadName{
+    position: absolute;
+    top: 50px;
+    margin-left: 30%;
+    font-size: 50px;
+    padding-left: 20px;
+}
+.tagline{
+    position: absolute;
+    top: 100px;
+    margin-left: 30%;
+    font-size: 30px;
+    padding-left: 20px;
+}
+#acadLogo{
+    position: relative;
+    width: 200px;
+    border-radius: 50px;
+}
+.officer{
+    margin-left: 5%;
+    margin-right: 65%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 5%;
+    font-size: 20px;
+    border: solid;
+}
+#officerCourse{
+    text-indent: 3em;
+}
+.about{
+    text-align: justify;
+    position: absolute;
+    margin-left: 40%;
+    margin-right: 40%;
+    top: 450px;
+}
+
 
 /*OFFICES*/
 .office{
@@ -327,4 +400,9 @@ a:hover{
     border-radius: 50px;
     position: absolute;
     margin-left: 5%;
+<<<<<<< HEAD
 }
+
+=======
+}
+>>>>>>> 0c57ec6e0d093012d7a542a31fbb147d01515150
