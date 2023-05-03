@@ -250,7 +250,7 @@ a:hover{
     position: relative;
     text-align: center;
 }
-.logo{
+.acadLogo{
     margin-left:28%;
     position: relative;
     border-radius: 60%;
@@ -276,19 +276,51 @@ a:hover{
 }
 
 /*OFFICES*/
-.office1{
-    margin-top: 20%;
+.office{
+    top: 250px;
     margin-left:10%;
     margin-right: 10%;
-    background-color:#00573F ;
+    background-color:#00573F;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+}
+#officeInfo{
+    background-color: #FFB81D;
+    font-size: 20px;
+}
+#officeName{
+    color: white;
+    font-size: 30px;
+}
+
+/*DEPARTMENT*/
+.department{
+    top: 250px;
+    margin-left:10%;
+    margin-right: 10%;
+    background-color:#00573F;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
 }
 #info{
     background-color: #FFB81D;
     font-size: 20px;
-    margin-left: 35%;
+    margin-left: 20%;
 }
-#officeName{
+#name{
+    color: white;
     font-size: 30px;
+    margin-left: 20%;
 }
-
-
+.logo{
+    width:100px;
+    border-radius: 50px;
+    position: absolute;
+    margin-left: 5%;
+}
