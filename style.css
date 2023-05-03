@@ -1,0 +1,330 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+/*   Scrollbar Hide    */
+::-webkit-scrollbar {
+    display: none;
+}
+/*header*/
+h1{
+    font-size: 50px;
+}
+header h2,header h3{
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+}
+.heading{
+    position: absolute;
+    color: #fff;
+    background-color: #8A1538;
+    text-align: center;
+    height:25%;
+    width: 100%;
+    top: 0;
+}
+.navBar{
+    background: #00573F;
+    text-align: center;
+    float: right;
+    position: absolute;
+    z-index:99;
+    width: 75%;
+    margin-left: 25%;
+    top:0;
+    margin-top: 9%;
+}
+.navBar ul{
+    list-style: none;
+    color: #fff;
+}
+.navBar li{
+    display: inline-block;
+    padding: 25px;
+}
+.navigation{
+    
+    font-size: 20px;
+    text-align: center;
+    line-height:300%;
+    list-style: none;
+}
+.sub-navigation{
+    color: #fff;
+    list-style: none;
+}
+.sub-menu li{
+    display: block;
+} 
+.dropdown{
+    display: none;
+}
+.logo1{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    width: 130px;
+    border-radius: 80px;
+    margin-top: 5%;
+}
+.logo2{
+    position: absolute;
+    top: 20px;
+    left: 150px;
+    width: 130px;
+    border-radius: 100px;
+    margin-top: 5%;
+    z-index: 99;
+
+}
+
+/*navbar link*/
+a {
+    color: #fff;
+    text-decoration: none;
+}
+a:hover{
+    color: #000;
+}
+
+/*SubMenuBar*/
+.sub-menu{
+    display: none;
+}
+.navBar ul li:hover{
+    background-color: #FFB81D;
+}
+.navBar ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    background-color: #B61A38;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.navBar ul li:hover .sub-menu ul{
+    display: block;
+    margin: 10px;
+}
+.navBar ul li:hover .sub-menu ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;   
+}
+.navBar ul li:hover .sub-menu ul li:last-child{
+    border-bottom: none;
+}
+ /*body*/
+.cas{
+    position: relative;
+    text-align: center;
+    margin-top: 18%;
+}
+#cas{
+    position: absolute;
+    margin-top: 3%;
+    margin-left: 20%;
+    font-size: 30px;
+}
+#events{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 1%;
+}
+#desc{
+    position: absolute;
+    margin-top: 30%;
+    margin-left: 20%;
+    margin-right: 20%;
+    color: white;
+}
+
+/*slideshow container*/
+.slideshow-container{
+    margin-top: 10%;
+}
+.mySlides > img{
+    width: 50%;
+    height: 40%;
+}
+.events{
+    width: 60%;
+    box-sizing:border-box;
+    margin-left: 15%;
+    position: absolute;
+}
+.announcements{
+    width: 60%;
+    box-sizing:border-box;
+    margin-left: 55%;
+    position: absolute;
+}
+
+/*next & previous buttons (slideshow)*/
+#prev, #next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/*position the "next button" to the right*/
+#next {
+  right: 50%;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+#prev:hover, #next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dots{
+    margin-left: 20%;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*ACAD_ORG*/
+.acadOrg{
+    border: solid;
+    border-color: #8A1538;
+    margin-top: 20%;
+    margin-left:5%;
+    margin-right: 5%;
+    border-width: 20px;
+}
+#orgName{
+    font-size: 30px;
+    color: black;
+    position: relative;
+    text-align: center;
+}
+.acadLogo{
+    margin-left:28%;
+    position: relative;
+    border-radius: 60%;
+    width: 500px;
+    padding-top: 2%;
+}
+.prev,.next{
+    cursor: pointer;
+    position: absolute;
+    margin-top: 20%;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.prev{
+    left:20%;
+}
+.next{
+  right: 20%;
+}
+
+/*OFFICES*/
+.office{
+    top: 250px;
+    margin-left:10%;
+    margin-right: 10%;
+    background-color:#00573F;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+}
+#officeInfo{
+    background-color: #FFB81D;
+    font-size: 20px;
+}
+#officeName{
+    color: white;
+    font-size: 30px;
+}
+
+/*DEPARTMENT*/
+.department{
+    top: 250px;
+    margin-left:10%;
+    margin-right: 10%;
+    background-color:#00573F;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+}
+#info{
+    background-color: #FFB81D;
+    font-size: 20px;
+    margin-left: 20%;
+}
+#name{
+    color: white;
+    font-size: 30px;
+    margin-left: 20%;
+}
+.logo{
+    width:100px;
+    border-radius: 50px;
+    position: absolute;
+    margin-left: 5%;
+}
