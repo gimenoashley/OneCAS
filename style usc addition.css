@@ -1,0 +1,69 @@
+
+/* acadorg,studentorg info */
+/* container */
+.grid-container{
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+.grid-container h3, .grid-container p{
+    padding-bottom: 3px;
+}
+/* content */
+.officerbox{
+    padding: 10px;
+    font-size: 20px;
+    overflow-y: scroll;
+    max-height: 450px;
+    background-color: #00573F;
+    border-radius: 5px;
+}
+.officerbox h2{
+    text-align:center;
+    padding-bottom:3px;
+    font-size: 30px;
+    background-color: #B61A38   ;
+    border-radius: 10px;
+    color: #fff;
+}
+.officer{
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+    background-color:#FFB81D;
+    border-radius: 10px;
+}
+#officerCourse, #officerName{
+    text-align: justify;
+    text-indent: 3em;
+    color: #000;
+}
+#officerPic{
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+.about{
+    padding: 15px;
+    text-align: justify;
+    overflow-y: scroll;
+    max-height: 450px;
+    background-color: #00573F;
+    border-radius: 5px;
+}
+.about p{
+    margin-bottom: 10px;
+    font-size: 20px;
+    background-color: #FFB81D;
+    padding: 5px;
+}
+.about h2{
+    margin-bottom: 10px;
+    color: #fff;
+}
