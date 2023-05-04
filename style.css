@@ -1,17 +1,13 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
 }
 body{
     background-size: cover;
     box-sizing: border-box;
 }
 
-/*   Scrollbar Hide    */
-::-webkit-scrollbar {
-    display: none;
-}
+/*HOME*/
 /*header*/
 h1{
     font-size: 50px;
@@ -35,13 +31,13 @@ header h2,header h3{
 .navBar{
     background: #00573F;
     text-align: center;
-    float: right;
     position: absolute;
     z-index:99;
-    width: 75%;
+    width: 73%;
     margin-left: 25%;
     top:0;
     margin-top: 9%;
+    border-radius: 5px;
 }
 .navBar ul{
     list-style: none;
@@ -49,15 +45,9 @@ header h2,header h3{
 }
 .navBar li{
     display: inline-block;
-    padding: 25px;
 }
 .navigation{
-<<<<<<< HEAD
-<<<<<<< HEAD
     margin: 30px;
-=======
-    
->>>>>>> 8dd8fc509d054d7ec147bf38131c72297efb4928
     font-size: 20px;
     text-align: center;
     line-height:300%;
@@ -128,17 +118,26 @@ a:hover{
 .navBar ul li:hover .sub-menu ul li:last-child{
     border-bottom: none;
 }
+
  /*body*/
 .cas{
     position: relative;
     text-align: center;
-    margin-top: 18%;
+    padding:12px;
+    margin-top: 16%;
+    margin-bottom: 5%;
 }
 #cas{
     position: absolute;
-    margin-top: 3%;
-    margin-left: 20%;
-    font-size: 30px;
+    margin-top: 25%;
+    margin-left: 8%;
+    font-size: 48px;
+    color: whitesmoke;
+}
+img.casimg{
+    width: 100%;
+    height: 700px;
+    border-radius: 10px;
 }
 #events{
     text-align: center;
@@ -148,98 +147,15 @@ a:hover{
 #desc{
     position: absolute;
     margin-top: 30%;
-    margin-left: 20%;
+    margin-left: 8%;
     margin-right: 20%;
-    color: white;
-}
+    color: whitesmoke;
+    text-align: left;
 
-/*slideshow container*/
-.slideshow-container{
-    margin-top: 10%;
 }
-.mySlides > img{
-    width: 50%;
-    height: 40%;
-}
-.events{
-    width: 60%;
-    box-sizing:border-box;
-    margin-left: 15%;
-    position: absolute;
-}
-.announcements{
-    width: 60%;
-    box-sizing:border-box;
-    margin-left: 55%;
-    position: absolute;
-}
-
-/*next & previous buttons (slideshow)*/
-#prev, #next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/*position the "next button" to the right*/
-#next {
-  right: 50%;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-#prev:hover, #next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* The dots/bullets/indicators */
-.dots{
-    margin-left: 20%;
-}
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+.imgevents{
+    width: 250px;
+    height: 250px;
 }
 
 footer hr{
@@ -400,9 +316,5 @@ footer .copyright{
     border-radius: 50px;
     position: absolute;
     margin-left: 5%;
-<<<<<<< HEAD
 }
 
-=======
-}
->>>>>>> 0c57ec6e0d093012d7a542a31fbb147d01515150
