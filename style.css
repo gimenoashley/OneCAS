@@ -144,6 +144,7 @@ img.casimg{
     font-size: 30px;
     margin-bottom: 1%;
 }
+
 #desc{
     position: absolute;
     margin-top: 30%;
@@ -151,11 +152,32 @@ img.casimg{
     margin-right: 20%;
     color: whitesmoke;
     text-align: left;
-
 }
+
+table {
+    padding: 20px;
+    margin: 15px;
+    background-color: #FCDDBC;
+    border-radius: 10px;
+}
+
 .imgevents{
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.eventsdesc {
+    text-align: justify;
+}
+
+td {
+    padding: 5px;
+    font-size: 18px;
+}
+
+tr {
+    padding: 10px;
 }
 
 /*ACAD_ORG*/
