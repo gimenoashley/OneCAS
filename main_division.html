@@ -3,14 +3,14 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Divisions/Departments</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="main_division.css">
 </head>
 <body>
 	<header>
 		<div class="heading">
 			<h1>One CAS</h1>
 			<h2>College of Arts and Sciences</h2>
-			<h2>University of the Philippines Visayas</h2>
+			<h3>University of the Philippines Visayas</h3>
 		</div>
 		<img src="UPVLogo.png" class="logo1">
 		<img src="CASLogo.jpg" class="logo2">
@@ -22,13 +22,14 @@
 					<div class="sub-menu">
 						<ul>
 							<li><a class="sub-navigation" href="subo_chancellor.html">Office of the Chancellor</a></li>
-							<li><a class="sub-navigation" href="subo_vicechance.html">Office of the Vice Chancellors</a></li>
+							<li><a class="sub-navigation" href="subo_vcacadaffairs.html">Office of the Vice Chancellor for Academic Affairs</a></li>
+							<li><a class="sub-navigation" href="subo_vcadmin.html">Office of the Vice Chancellor for Administration</a></li>
+							<li><a class="sub-navigation" href="subo_vcplandev.html">Office of the Vice Chancellor for Planning and Development</a></li>
+							<li><a class="sub-navigation" href="subo_vcresearchex.html">Office of the Vice Chancellor for Research and Extension</a></li>
 							<li><a class="sub-navigation" href="subo_casdean.html">Office of the College of Arts and Science Dean</a></li>
 							<li><a class="sub-navigation" href="subo_colsec.html">Office of the College Secretary</a></li>
-							<li><a class="sub-navigation" href="subo_univreg.html">Office of the Registrar</a></li>
+							<li><a class="sub-navigation" href="subo_univreg.html">Office of the University Registrar</a></li>
 							<li><a class="sub-navigation" href="subo_studaffairs.html">Office of the Student Affairs</a></li>
-							<li><a class="sub-navigation" href="subo_soctuition.html">Socialized Tuition Office</a></li>
-							<li><a class="sub-navigation" href="subo_admission.html">Admissions Office</a></li>
 							<li><a class="sub-navigation" href="subo_casstudcouncil.html">College of Arts and Sciences Student Council</a></li>
 							<li><a class="sub-navigation" href="subo_casstudcouncil.html">University Student Council</a></li>
 							<li><a class="sub-navigation" href="subo_crs.html">CRS</a></li>
@@ -44,7 +45,7 @@
 							<li><a class="sub-navigation" href="subd_biosci.html">Division of Biological Sciences</a></li>
 							<li><a class="sub-navigation" href="subd_hums.html">Division of Humanities</a></li>
 							<li><a class="sub-navigation" href="subd_psm.html">Division of Physical Sciences and Mathematics</a></li>
-							<li><a class="sub-navigation" href="subd_pe.html">Department of Physical Education	</a></li>
+							<li><a class="sub-navigation" href="subd_pe.html">Department of Physical Education</a></li>
 						</ul>
 					</div>
 				<!-- 	ACADEMIC ORGANIZATIONS	 -->
@@ -67,7 +68,7 @@
 							<li><a class="sub-navigation" href="subs_discursus.html">UPV Discursus</a></li>
 							<li><a class="sub-navigation" href="subs_kamaragtas.html">UPV Kamaragtas</a></li>
 							<li><a class="sub-navigation" href="subs_komsai.html">UPV Komsai.org</a></li>
-							<li><a class="sub-navigation" href="subs_phpub.html">PH Pub</a></li>
+							<li><a class="sub-navigation" href="subs_phpub.html">UPV PH Pub</a></li>
 							<li><a class="sub-navigation" href="subs_sakdag.html">UP Sakdag</a></li>
 							<li><a class="sub-navigation" href="subs_sociosoc.html">UPV Sociological Society</a></li>
 							<li><a class="sub-navigation" href="subs_sss.html">UPV Samahang Sikolohiya Society</a></li>
@@ -78,30 +79,51 @@
 			</ul>
 		</div> 
 	</header>
-	<div class="department">
-		<a href="sample.html"><img src="DoPE.jpg" class="logo"></a>
-		<h4 id="name"><a href="sample.html">Department of Physical Education</a></h4>
-		<p id="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tristique sapien vel magna mollis varius sit amet vel ligula. Donec sodales ex dolor, eu lacinia magna convallis a. Nulla vitae nulla rutrum, hendrerit felis eget, rutrum nunc eu lacinia magna convallis a. </p>
-	</div>
-	<br>
-	<div class="department">
-		<a href="sample.html"><img src="DPSM.jpg" class="logo"></a>
-		<h4 id="name"><a href="sample.html">Department of Physical Science and Mathematics</a></h4>
-		<p id="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tristique sapien vel magna mollis varius sit amet vel ligula. Donec sodales ex dolor, eu lacinia magna convallis a. Nulla vitae nulla rutrum, hendrerit felis eget, rutrum nunc eu lacinia magna convallis a. </p>
-	</div>
-	<br>
-	<div class="department">
-		<a href="sample.html"><img src="BioSci.jpg" class="logo"></a>
-		<h4 id="name"><a href="sample.html">Division of Social Sciences</a></h4>
-		<p id="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tristique sapien vel magna mollis varius sit amet vel ligula. Donec sodales ex dolor, eu lacinia magna convallis a. Nulla vitae nulla rutrum, hendrerit felis eget, rutrum nunc eu lacinia magna convallis a. </p>
+	<div id="main">
+	<h3 id="title">Departments</h3>
+	<table>
+		<tr class="col">
+			<td class="events"><a href="subd_chem.html"><img src="exlogo.jpg" class="imgevents"></a></td>
+			<td class="eventsdesc"><a href="subd_chem.html"><h4>Department of Chemistry</h4></a>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p></td>
+		</tr>
+		<tr class="col">
+			<td class="events"><a href="subd_profed.html"><img src="exlogo.jpg" class="imgevents"></a></td>
+			<td class="eventsdesc"><a href="subd_profed.html"><h4>Division of Professional Education</h4></a>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p></td>
+		</tr>
+		<tr class="col">
+			<td class="events"><a href="subd_socsci.html"><img src="exlogo.jpg" class="imgevents"></a></td>
+			<td class="eventsdesc"><a href="subd_socsci.html"><h4>Division of Social Sciences</h4></a>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p></td>
+		</tr>
+		<tr class="col">
+			<td class="events"><a href="subd_biosci.html"><img src="BioSci.jpg" class="imgevents"></a></td>
+			<td class="eventsdesc"><a href="subd_biosci.html"><h4>Division of Biological Sciences</h4></a>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p></td>
+		</tr>
+		<tr class="col">
+			<td class="events"><a href="subd_hums.html"><img src="exlogo.jpg" class="imgevents"></a></td>
+			<td class="eventsdesc"><a href="subd_hums.html"><h4>Division of Humanities</h4></a>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p></td>
+		</tr>
+		<tr class="col">
+			<td class="events"><a href="subd_psm.html"><img src="DPSM.jpg" class="imgevents"></a></td>
+			<td class="eventsdesc"><a href="subd_psm.html"><h4>Division of Physical Sciences and Mathematics</h4></a>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p></td>
+		</tr>
+		<tr class="col">
+			<td class="events"><a href="subd_pe.html"><img src="DoPE.jpg" class="imgevents"></a></td>
+			<td class="eventsdesc"><a href="subd_pe.html"><h4>Department of Physical Education</h4></a>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p></td>
+		</tr>
+		
+	</table>
 	</div>
 </body>
 <footer>
-	<hr>
 	<br>
 	<div class="copyright">
-		<p>University of the Philippines Visayas, Miag-ao, Iloilo, Philippines, 5023 <br>
-Copyright 2023
-		</p>
+		<p>University of the Philippines Visayas, Miag-ao, Iloilo, Philippines, 5023 <br> Copyright 2023</p>
 	</div>
 </footer>
