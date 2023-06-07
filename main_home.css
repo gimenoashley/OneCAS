@@ -143,7 +143,6 @@ a:hover{
     text-align: center;
     padding: 0;
     margin-top: 9.3%;
-    
 }
 
 img.casimg{
@@ -160,6 +159,7 @@ img.casimg{
     font-size: 43px;
     color: #FFFFFF;
     z-index: 90;
+    text-shadow: 2px 2px 3px black;
 }
 
 #desc{
@@ -171,48 +171,62 @@ img.casimg{
     text-align: left;
     font-size: 18px;
     z-index: 90;
+    text-shadow: 1px 1px 2px black;
 }
 
 /* EVENTS AND ANNOUNCEMENTS SECTION */
 
 #events{
-    background-color: #FFB81D;
-    border-radius: 10px;
+    display: block;
+    margin: 3% 10%;
+    background-color: none;
+    text-transform: uppercase;
     padding: 5px;
-    margin: 10px;
     text-align: center;
     font-size: 30px;
-    margin-bottom: 1%;
-    margin-top: 5%;
+    color: #00573F;
+    border-bottom: 2px solid #00573F;
 }
 
 table {
-    padding: 20px;
-    margin: 10px;
-    margin-bottom: 0px;
-    background-color: #00573F;
-    border-radius: 10px;
+    display: block;
+    margin: 3% 15%;
+    background-color: none;
+    border-radius: 1px;
 }
 
 .imgevents{
     width: 300px;
-    height: 180px;
-    border-radius: 10px;
+    height: 190px;
+    border-radius: 3px;
+    object-fit: cover;
 }
 
 .eventsdesc {
     text-align: justify;
-    padding: 16px;
-    color: #FFFFFF;
+    padding: 25px;
+    font-size: 17px;
+    color: #00573F;
 }
 
-td {
-    padding: 5px;
-    font-size: 18px;
+h4 {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: #00573F;
 }
 
 tr {
-    padding: 10px;
+    display: block;
+    padding: 3px;
+    border: 1px solid #00573F;
+    margin: 10px;
+    border-radius: 2px;
+}
+
+tr:hover{
+    background-color: #FFB81D;
 }
 
 /* FOOTER */
@@ -228,9 +242,6 @@ footer .copyright{
     background-color: #8A1538;
     text-align: center;
     color: #FFFFFF;
-    padding-top: 2%;
-    padding-left: 2%;
-    padding-right: 2%;
-    padding-bottom: 2%;
+    padding: 2%;
     font-size: 18px;
 }
