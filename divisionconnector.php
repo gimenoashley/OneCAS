@@ -1,39 +1,104 @@
 <?php
-// Database connection settings
+
+// Connection parameters
 $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "divisiondatabase";
 
-// Create a new MySQLi instance
+// Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Check the connection
+// Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Add division_id column to divisionsprofs table
-$addColumnQuery = "ALTER TABLE divisionsprofs ADD COLUMN division_id INT(11) NOT NULL";
-$conn->query($addColumnQuery);
+// SQL query to create the relationship table
+$sql = "CREATE TABLE relationships (
+  prof_id INT(11) NOT NULL,
+  div_id INT(11) NOT NULL,
+  FOREIGN KEY (prof_id) REFERENCES divisionsprofs(prof_id),
+  FOREIGN KEY (div_id) REFERENCES divisions(div_id)
+)";
 
-// Update division_id values based on professor IDs
-$updateQuery = "UPDATE divisionsprofs SET division_id = CASE 
-    WHEN prof_id >= 1000 AND prof_id < 2000 THEN 1
-    WHEN prof_id >= 2000 AND prof_id < 3000 THEN 2
-    WHEN prof_id >= 3000 AND prof_id < 4000 THEN 3
-    WHEN prof_id >= 4000 AND prof_id < 5000 THEN 4
-    WHEN prof_id >= 5000 AND prof_id < 6000 THEN 5
-    WHEN prof_id >= 6000 AND prof_id < 7000 THEN 6
-    WHEN prof_id >= 7000 THEN 7
-    ELSE NULL
-END";
-$conn->query($updateQuery);
+if ($conn->query($sql) === TRUE) {
+    echo "Relationship table created successfully";
+} else {
+    echo "Error creating relationship table: " . $conn->error;
+}
 
-// Add foreign key constraint to connect divisionsprofs.prof_id to divisions.div_id
-$addForeignKeyQuery = "ALTER TABLE divisionsprofs ADD FOREIGN KEY (division_id) REFERENCES divisions(div_id)";
-$conn->query($addForeignKeyQuery);
+// Populate the relationship table based on the conditions
+$sql = "INSERT INTO relationships (prof_id, div_id)
+        SELECT divisionsprofs.prof_id, divisions.div_id
+        FROM divisionsprofs
+        JOIN divisions WHERE divisionsprofs.prof_id >= 1000 AND divisionsprofs.prof_id < 2000 AND divisions.div_id = 1
+        OR divisionsprofs.prof_id >= 2000 AND divisionsprofs.prof_id < 3000 AND divisions.div_id = 2
+        OR divisionsprofs.prof_id >= 3000 AND divisionsprofs.prof_id < 4000 AND divisions.div_id = 3
+        OR divisionsprofs.prof_id >= 4000 AND divisionsprofs.prof_id < 5000 AND divisions.div_id = 4
+        OR divisionsprofs.prof_id >= 5000 AND divisionsprofs.prof_id < 6000 AND divisions.div_id = 5
+        OR divisionsprofs.prof_id >= 6000 AND divisionsprofs.prof_id < 7000 AND divisions.div_id = 6
+        OR divisionsprofs.prof_id >= 7000 AND divisionsprofs.prof_id < 8000 AND divisions.div_id = 7";
 
-// Close the database connection
+if ($conn->query($sql) === TRUE) {
+    echo "Relationships populated successfully";
+} else {
+    echo "Error populating relationships: " . $conn->error;
+}
+
+// Close the connection
 $conn->close();
+
+?>
+<?php
+
+// Connection parameters
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "divisiondatabase";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// SQL query to create the relationship table
+$sql = "CREATE TABLE div_relationships (
+  prof_id INT(11) NOT NULL,
+  div_id INT(11) NOT NULL,
+  FOREIGN KEY (prof_id) REFERENCES divisionsprofs(prof_id),
+  FOREIGN KEY (div_id) REFERENCES divisions(div_id)
+)";
+
+if ($conn->query($sql) === TRUE) {
+    echo "Relationship table created successfully";
+} else {
+    echo "Error creating relationship table: " . $conn->error;
+}
+
+// Populate the relationship table based on the conditions
+$sql = "INSERT INTO div_relationships (prof_id, div_id)
+        SELECT divisionsprofs.prof_id, divisions.div_id
+        FROM divisionsprofs
+        JOIN divisions WHERE divisionsprofs.prof_id >= 1000 AND divisionsprofs.prof_id < 2000 AND divisions.div_id = 1
+        OR divisionsprofs.prof_id >= 2000 AND divisionsprofs.prof_id < 3000 AND divisions.div_id = 2
+        OR divisionsprofs.prof_id >= 3000 AND divisionsprofs.prof_id < 4000 AND divisions.div_id = 3
+        OR divisionsprofs.prof_id >= 4000 AND divisionsprofs.prof_id < 5000 AND divisions.div_id = 4
+        OR divisionsprofs.prof_id >= 5000 AND divisionsprofs.prof_id < 6000 AND divisions.div_id = 5
+        OR divisionsprofs.prof_id >= 6000 AND divisionsprofs.prof_id < 7000 AND divisions.div_id = 6
+        OR divisionsprofs.prof_id >= 7000 AND divisionsprofs.prof_id < 8000 AND divisions.div_id = 7";
+
+if ($conn->query($sql) === TRUE) {
+    echo "Relationships populated successfully";
+} else {
+    echo "Error populating relationships: " . $conn->error;
+}
+
+// Close the connection
+$conn->close();
+
 ?>
