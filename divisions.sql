@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 07, 2023 at 02:30 PM
+-- Generation Time: Jun 07, 2023 at 06:37 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -29,6 +29,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `divisions` (
   `div_id` int(11) NOT NULL,
+  `name` varchar(255) DEFAULT NULL,
   `description` varchar(255) DEFAULT NULL,
   `mission` varchar(255) DEFAULT NULL,
   `vision` varchar(255) DEFAULT NULL,
@@ -41,14 +42,14 @@ CREATE TABLE `divisions` (
 -- Dumping data for table `divisions`
 --
 
-INSERT INTO `divisions` (`div_id`, `description`, `mission`, `vision`, `fb_link`, `div_email`, `div_contactn`) VALUES
-(1, '<this is division of chemistry>', NULL, NULL, 'https://www.facebook.com/upvchem', 'chemistry.upvisayas@up.edu.ph', '(033) 513-7020'),
-(2, '<this is division of professional education>', NULL, NULL, 'https://www.facebook.com/upv.cas.profed', 'profed.upvisayas@up.edu.ph', '(033) 337-2929'),
-(3, '<this is division of social sciences>', NULL, NULL, 'https://www.facebook.com/upvdivsocsci/', 'socsci@upv.edu.ph', ' (033) 513-7012'),
-(4, '<this is division of biological sciences>', NULL, NULL, 'https://www.facebook.com/upvdbs', 'biosci.upvisayas@up.edu.ph', '(033) 331-0237'),
-(5, '<this is division of humanities>', NULL, NULL, 'https://www.facebook.com/UPVDivisionofHumanities', 'humdiv.upv@up.edu.ph', '(033) 513-7011'),
-(6, '<this is division of physical sciences and mathematics>', '● Offer graduate and undergraduate degree programs responsive and contributing in the regional, national and global needs\r\n● Conduct theoretical and applied researches with concentration in the fields of mathematical and computational sciences\r\n● Organize', 'A center of excellence responding to the scientific, technological, and industrial needs, posed by developments in the mathematical and computational sciences locally and globally through its academic programs as well as research and public service activi', 'https://www.facebook.com/dpsmcas', 'psm.upvisayas@up.edu.ph', '(033) 513-8785'),
-(7, '<this is division of physical education>', NULL, NULL, NULL, 'pe.upvisayas@up.edu.ph', '(033) 315-9631; 315-9632');
+INSERT INTO `divisions` (`div_id`, `name`, `description`, `mission`, `vision`, `fb_link`, `div_email`, `div_contactn`) VALUES
+(1, 'Division of Chemistry', '<this is division of chemistry>', NULL, NULL, 'https://www.facebook.com/upvchem', 'chemistry.upvisayas@up.edu.ph', '(033) 513-7020'),
+(2, 'Division of Professional Education', '<this is division of professional education>', NULL, NULL, 'https://www.facebook.com/upv.cas.profed', 'profed.upvisayas@up.edu.ph', '(033) 337-2929'),
+(3, 'Division of Social Sciences', '<this is division of social sciences>', NULL, NULL, 'https://www.facebook.com/upvdivsocsci/', 'socsci@upv.edu.ph', ' (033) 513-7012'),
+(4, 'Division of Biological Sciences', '<this is division of biological sciences>', NULL, NULL, 'https://www.facebook.com/upvdbs', 'biosci.upvisayas@up.edu.ph', '(033) 331-0237'),
+(5, 'Division of Humanities', '<this is division of humanities>', NULL, NULL, 'https://www.facebook.com/UPVDivisionofHumanities', 'humdiv.upv@up.edu.ph', '(033) 513-7011'),
+(6, 'Division of Physical Sciences and Mathematics', '<this is division of physical sciences and mathematics>', '● Offer graduate and undergraduate degree programs responsive and contributing in the regional, national and global needs\r\n● Conduct theoretical and applied researches with concentration in the fields of mathematical and computational sciences\r\n● Organize', 'A center of excellence responding to the scientific, technological, and industrial needs, posed by developments in the mathematical and computational sciences locally and globally through its academic programs as well as research and public service activi', 'https://www.facebook.com/dpsmcas', 'psm.upvisayas@up.edu.ph', '(033) 513-8785'),
+(7, 'Division of Physical Education', '<this is division of physical education>', NULL, NULL, NULL, 'pe.upvisayas@up.edu.ph', '(033) 315-9631; 315-9632');
 
 --
 -- Indexes for dumped tables
