@@ -1,0 +1,236 @@
+/* HOME PAGE CSS */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+h1{
+    padding-top: 5px;
+    font-size: 45px;
+}
+
+header h2, header h3{
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.heading{
+    position: absolute;
+    color: #FFFFFF;
+    background-color: #8A1538;
+    text-align: center;
+    height: 19.8%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+}
+
+.navBar{
+    background: #00573F;
+    text-align: center;
+    position: absolute;
+    z-index:99;
+    width: 73%;
+    margin-left: 25%;
+    top:0;
+    margin-top: 8%;
+    border-radius: 5px;
+}
+
+.navBar ul{
+    list-style: none;
+    color: #FFFFFF;
+}
+
+.navBar li{
+    display: inline-block;
+}
+
+.navigation{
+    margin: 30px;
+    font-size: 18px;
+    text-align: center;
+    line-height:280%;
+    list-style: none;
+    left: 0;
+}
+
+.sub-navigation{
+    color: #FFFFFF;
+    list-style: none;
+}
+
+.sub-menu li{
+    display: block;
+} 
+
+.logo1{
+    position: absolute;
+    top: 6%;
+    left: 2%;
+    width: 10.5%;
+    border-radius: 80px;
+    z-index: 99;
+}
+
+.logo2{
+    position: absolute;
+    top: 6%;
+    left: 13%;
+    width: 10%;
+    border-radius: 110px;  
+    z-index: 99;
+}
+
+/* NAVBAR LINK */
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #000;
+}
+
+/* SUB-MENU BAR */
+
+.sub-menu{
+    display: none;
+}
+
+.navBar ul li:hover{
+    background-color: #FFB81D;
+}
+
+.navBar ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    background-color: #B61A38;
+}
+
+.navBar ul li:hover .sub-menu ul{
+    display: block;
+}
+
+.navBar ul li:hover .sub-menu ul li{
+    width: 225px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;   
+}
+
+.navBar ul li:hover .sub-menu ul li:last-child{
+    border-bottom: none;
+}
+
+/* BODY */
+
+.cas{
+    position: relative;
+    text-align: center;
+    padding: 0;
+    margin-top: 9.3%;
+    
+}
+
+img.casimg{
+    top: 0;
+    width: 100%;
+    height: 600px;
+    opacity: 0.87;
+}
+
+#cas{
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 8%;
+    font-size: 43px;
+    color: #FFFFFF;
+    z-index: 90;
+}
+
+#desc{
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 8%;
+    margin-right: 18%;
+    color: #FFFFFF;
+    text-align: left;
+    font-size: 18px;
+    z-index: 90;
+}
+
+/* EVENTS AND ANNOUNCEMENTS SECTION */
+
+#events{
+    background-color: #FFB81D;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 1%;
+    margin-top: 5%;
+}
+
+table {
+    padding: 20px;
+    margin: 10px;
+    margin-bottom: 0px;
+    background-color: #00573F;
+    border-radius: 10px;
+}
+
+.imgevents{
+    width: 300px;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.eventsdesc {
+    text-align: justify;
+    padding: 16px;
+    color: #FFFFFF;
+}
+
+td {
+    padding: 5px;
+    font-size: 18px;
+}
+
+tr {
+    padding: 10px;
+}
+
+/* FOOTER */
+
+footer{
+    position: static;
+    width: 100%;
+    margin-top: 5%;
+    background-color: #FFB81D;
+}
+
+footer .copyright{
+    background-color: #8A1538;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    font-size: 18px;
+}
