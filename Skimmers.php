@@ -1,7 +1,7 @@
 <?php
 	include 'connected.php';
 
-  	$sql = "SELECT * FROM acadofficers";
+  	$sql = "SELECT * FROM acadofficers WHERE id=4";
   	$result =$conn->query($sql);
 
   	echo "<td align='center'>EXECUTIVE COMMITTEE <br> </td>";
