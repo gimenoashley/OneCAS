@@ -138,39 +138,57 @@ a:hover{
 
 /* BODY */
 
-.cas{
-    position: relative;
+#title{
+    display: block;
+    margin: 3% 10%;
+    background-color: none;
+    text-transform: uppercase;
+    padding: 5px;
     text-align: center;
-    padding: 0;
-    margin-top: 9.3%;
-    
+    font-size: 30px;
+    color: #00573F;
+    border-bottom: 2px solid #00573F;
 }
 
-img.casimg{
-    top: 0;
-    width: 100%;
-    height: 600px;
-    opacity: 0.87;
+#main {
+    margin: 15% 15% 3% 15%;
 }
 
-#cas{
-    position: absolute;
-    margin-top: 20%;
-    margin-left: 8%;
-    font-size: 43px;
-    color: #FFFFFF;
-    z-index: 90;
+table {
+    display: block;
+    background-color: none;
+    border-radius: 1px;
 }
 
-#desc{
-    position: absolute;
-    margin-top: 25%;
-    margin-left: 8%;
-    margin-right: 18%;
-    color: #FFFFFF;
-    text-align: left;
-    font-size: 18px;
-    z-index: 90;
+.officeName {
+    text-align: justify;
+    padding: 25px;
+    font-size: 17px;
+    color: #00573F;
+}
+
+h4 {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: #00573F;
+}
+
+h4:hover {
+    color: #8A1538;
+}
+
+tr {
+    display: block;
+    padding: 3px;
+    border: 1px solid #00573F;
+    margin: 10px;
+    border-radius: 2px;
+}
+
+tr:hover{
+    background-color: #FFB81D;
 }
 
 /* FOOTER */
