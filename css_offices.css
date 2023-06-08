@@ -1,0 +1,302 @@
+/* ACAD ORG - SKIMMERS PAGE CSS */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+h1{
+    padding-top: 5px;
+    font-size: 45px;
+}
+
+header h2, header h3{
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 22px;
+}
+
+.heading{
+    position: absolute;
+    color: #FFFFFF;
+    background-color: #8A1538;
+    text-align: center;
+    height: 19.8%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+}
+
+.navBar{
+    background: #00573F;
+    text-align: center;
+    position: absolute;
+    z-index:99;
+    width: 73%;
+    margin-left: 25%;
+    top:0;
+    margin-top: 7.7%;
+    border-radius: 5px;
+}
+
+.navBar ul{
+    list-style: none;
+    color: #FFFFFF;
+}
+
+.navBar li{
+    display: inline-block;
+}
+
+.navigation{
+    margin: 30px;
+    font-size: 18px;
+    text-align: center;
+    line-height:280%;
+    list-style: none;
+    left: 0;
+}
+
+.sub-navigation{
+    color: #FFFFFF;
+    list-style: none;
+}
+
+.sub-menu li{
+    display: block;
+} 
+
+.logo1{
+    position: absolute;
+    top: 6%;
+    left: 2%;
+    width: 10%;
+    border-radius: 80px;
+    z-index: 99;
+}
+
+.logo2{
+    position: absolute;
+    top: 6%;
+    left: 13%;
+    width: 10%;
+    border-radius: 110px;  
+    z-index: 99;
+}
+
+/* NAVBAR LINK */
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #000;
+}
+
+/* SUB-MENU BAR */
+
+.sub-menu{
+    display: none;
+}
+
+.navBar ul li:hover{
+    background-color: #FFB81D;
+}
+
+.navBar ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    background-color: #B61A38;
+}
+
+.navBar ul li:hover .sub-menu ul{
+    display: block;
+}
+
+.navBar ul li:hover .sub-menu ul li{
+    width: 225px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;   
+}
+
+.navBar ul li:hover .sub-menu ul li:last-child{
+    border-bottom: none;
+}
+
+/* BODY */
+
+/* SUB-HEADER */
+
+.orgName{
+    position: relative;
+    text-align: center;
+    padding: 0;
+    margin-top: 9.3%;
+}
+
+img.banner{
+    top: 0;
+    margin-top: 0;
+    width: 100%;
+    height: 570px;
+    opacity: 0.87;
+    object-fit: cover;
+}
+
+.divisionName{
+    position: absolute;
+    margin-left: 27%;
+    top: 55%;
+    font-size: 60px;
+    color: #FFFFFF;
+    z-index: 95;
+    text-shadow: 2px 2px 3px black;
+    text-align: left;
+}
+
+.tagline{
+    position: absolute;
+    top: 69%;
+    margin-left: 27%;
+    margin-right: auto;
+    color: #FFFFFF;
+    text-align: left;
+    font-size: 22px;
+    z-index: 95;
+    font-style: italic;
+    text-shadow: 2px 2px 3px black;
+}
+
+.acadLogo{
+    position: absolute;
+    top: 40%;
+    left: 3%;
+    width: 20%;
+    border-radius: 150px;
+    background-color: rgba(255, 255, 255, 1.0);
+    z-index: 90;
+}
+
+/* OFFICIALS/STAFF CONTAINER */
+
+.grid-container{
+    margin: 3% 8%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    max-height: 80%;
+}
+
+/* content */
+.officerbox{
+    padding: 0px 8px;
+    font-size: 18px;
+    overflow-y: scroll;
+    border-radius: 3px;
+    height: 700px;
+    color: #00573F;
+}
+
+.officerbox h2{
+    text-align: center;
+    padding: 3px;
+    font-size: 25px;
+    color: #FFFFFF;
+    position: sticky;
+    position: -webkit- sticky;
+    position: absolute;
+    margin-top: 0;
+    width: 39%;
+    left: auto;
+    right: auto;
+    background-color: #00573F;
+    display: block;
+    top: 10;
+    border-radius: 3px;
+}
+
+.officer{
+    margin-top: 6%;
+    margin-left: 3%;
+    margin-right: 3%;
+    background-color:#FFB81D;
+    border-radius: 5px;
+}
+
+#officerCourse, #officerName{
+    text-align: justify;
+    text-indent: 3em;
+    color: #00573F;
+}
+
+#officerPic{
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    width: 140px;
+    height: 140px;
+}
+
+/* ABOUT CONTAINER */
+
+.about{
+    padding: 0px 10px 10px 10px;
+    text-align: justify;
+    border-radius: 5px;
+    height: 700px;
+    overflow: auto;
+    color: #00573F;
+}
+
+.about p{
+    display: block;
+    margin: 5px;
+    border-radius: 3px;
+    font-size: 17px;
+    background-color: #FFFFFF;
+    padding: 10px;
+    border-left: 4px solid #8A1538;
+}
+
+.about h2{
+    margin-bottom: 15px;
+    
+    color: #FFFFFF;
+    background-color: #00573F;
+    border-radius: 3px;
+    padding: 3px 10px;
+
+}
+
+/* FOOTER */
+
+footer{
+    position: static;
+    width: 100%;
+    margin-top: 5%;
+    background-color: #FFB81D;
+}
+
+footer .copyright{
+    background-color: #8A1538;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    font-size: 18px;
+}
