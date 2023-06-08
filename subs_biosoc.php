@@ -2,7 +2,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Skimmers</title>
+	<title>UPV Biological Society</title>
 	<link rel="stylesheet" type="text/css" href="css_orgs.css">
 </head>
 <body>
@@ -82,12 +82,11 @@
 	<div class="orgName">
 		<img src="upvmia.jpg" class="banner">
 		<img src="logo_skimmers.jpg" class="acadLogo">
-		<h2 class="acadName">SKIMMERS</h3>
-		<h4 class="tagline">Beauty & Brains💜 The most fabulous academic organization in the whole world—the universe rather!</h4>
+		<h2 class="acadName">UPV Biological Society</h3>
 	</div>
 	<div class="grid-container">
 			<?php
-			 include 'Skimmers.php'
+			 include 'BioSoc.php';
 			?>
 	</div>
 	
