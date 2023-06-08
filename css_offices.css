@@ -158,7 +158,8 @@ img.banner{
 
 .divisionName{
     position: absolute;
-    margin-left: 24%;
+    margin-left: 20%;
+    margin-right: 10%
     top: 60%;
     font-size: 60px;
     color: #FFFFFF;
