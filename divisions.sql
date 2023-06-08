@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 07, 2023 at 06:37 PM
+-- Generation Time: Jun 08, 2023 at 05:10 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -30,9 +30,9 @@ SET time_zone = "+00:00";
 CREATE TABLE `divisions` (
   `div_id` int(11) NOT NULL,
   `name` varchar(255) DEFAULT NULL,
-  `description` varchar(255) DEFAULT NULL,
-  `mission` varchar(255) DEFAULT NULL,
-  `vision` varchar(255) DEFAULT NULL,
+  `description` text DEFAULT NULL,
+  `mission` text DEFAULT NULL,
+  `vision` text DEFAULT NULL,
   `fb_link` varchar(255) DEFAULT NULL,
   `div_email` varchar(255) DEFAULT NULL,
   `div_contactn` varchar(255) DEFAULT NULL
