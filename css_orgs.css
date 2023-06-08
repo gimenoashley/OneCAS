@@ -163,7 +163,7 @@ img.banner{
     font-size: 60px;
     color: #8A1538;
     z-index: 95;
-    text-shadow: 2px 2px 3px black;
+    text-shadow: 2px 2px 3px white;
 }
 
 .tagline{
@@ -176,7 +176,7 @@ img.banner{
     font-size: 22px;
     z-index: 95;
     font-style: italic;
-    text-shadow: 2px 2px 3px black;
+    text-shadow: 2px 2px 3px white;
 }
 
 .acadLogo{
