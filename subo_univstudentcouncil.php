@@ -2,7 +2,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Division of Professional Education</title>
+	<title>University Student Council</title>
 	<link rel="stylesheet" type="text/css" href="css_orgs.css">
 </head>
 <body>
@@ -82,11 +82,11 @@
 	<div class="orgName">
 		<img src="upvmia.jpg" class="banner">
 		<img src="logo_skimmers.jpg" class="acadLogo">
-		<h2 class="acadName">Division of Professional Education</h3>
+		<h2 class="acadName">University Student Council</h3>
 	</div>
 	<div class="grid-container">
 			<?php
-			 include 'DivProfEd.php';
+			 include 'USC.php';
 			?>
 	</div>
 	

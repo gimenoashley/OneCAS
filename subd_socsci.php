@@ -31,7 +31,7 @@
 							<li><a class="sub-navigation" href="subo_univreg.php">Office of the University Registrar</a></li>
 							<li><a class="sub-navigation" href="subo_studaffairs.php">Office of the Student Affairs</a></li>
 							<li><a class="sub-navigation" href="subo_casstudcouncil.php">College of Arts and Sciences Student Council</a></li>
-							<li><a class="sub-navigation" href="subo_casstudcouncil.php">University Student Council</a></li>
+							<li><a class="sub-navigation" href="subo_univstudentcouncil.php">University Student Council</a></li>
 							<li><a class="sub-navigation" href="subo_crs.php">CRS</a></li>
 						</ul>
 					</div>
